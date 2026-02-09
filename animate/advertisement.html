@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- external stylesheets -->
     <link rel="stylesheet" href="/sitewide.css">
+    <link rel="stylesheet" href="/showcase.css">
+    <!-- <link rel="stylesheet" href="/showcase.css"> -->
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,10 +89,17 @@ function handleComplete(evt,comp) {
         </nav>
      </header>
 
-     <div id="animation_container" style="background-color:rgba(255, 243, 221, 1.00); width:550px; height:400px">
-		<canvas id="canvas" width="550" height="400" style="position: absolute; display: block; background-color:rgba(255, 243, 221, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+     <h2 class="project-title">Interactive Advertisment</h2>
+
+     <p class="project-info">Create an animated advertisement for a product or service. Design an interactive web banner that responds to user actions. The purpose of this project is to demonstrate proficiency in Adobe Animate, as well as creating a visually appealing and professional advertisement.</p>
+
+
+     <div id="animation_container" class="ad-container">
+		<canvas id="canvas" class="ad-canvas" style="background-color: rgba(255, 243, 221, 1);"></canvas>
+		<div id="dom_overlay_container" class="overlay-container">
 		</div>
 	</div>
+
+    <p class="credits">Wheel of Fortune EPS file retrieved from <a href="https://www.vecteezy.com/vector-art/2879010-wheel-of-fortune-lucky-icon-vector-illustration">Vecteezy</a></p>
 </body>
 </html>
