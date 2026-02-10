@@ -2,7 +2,19 @@ iframe{
     width: 500px; 
     height: 281px; 
 }
-
+body{
+    background-color: pink;
+}
+p, div, h2{
+    margin: 1em; 
+}
+.credits a {
+    color: purple; 
+    transition: color 0.3s ease; 
+}
+.credits a:hover{
+    color: aquamarine;
+}
 .credits{
     font-size: 60%; 
 }
