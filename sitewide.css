@@ -2,12 +2,13 @@
 
 :root{
     --fontfamily: 'rubik', 'roboto', sans-serif; 
-    --fontcolor: #1a1a1a; 
+    --headerfontcolor: #fefefe;
+    --bodyfontcolor: #393939;  
     --fontsize: 14px; 
-    --bgcolor: #f1f1f1; 
-    --accent1: #d8d9d9; 
-    --accent2: #bdbfbf; 
-    --boxshadow: 0 1em 1em rgba(0, 0, 0, 0.12); 
+    --bgcolor: #fefefe; 
+    --accent1: #393939; 
+    --accent2: #818181; 
+    --boxshadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -39,6 +40,7 @@ html {
 body {
   margin: 0;
   background-color: var(--bgcolor);
+  color: var(--bodyfontcolor);
 }
 
 /**
@@ -371,6 +373,7 @@ ul, li{
     text-decoration: none;
 }
 
+
 /* HEADER NAVIGATION */
 
 header{
@@ -379,6 +382,7 @@ header{
     background-color: var(--accent1);
     box-shadow: var(--boxshadow);
     font-size: 110%; 
+    color: var(--headerfontcolor); 
 }
 
 .nav::after{
@@ -411,7 +415,7 @@ header{
 
 .nav li a{
     display: block; 
-    color: var(--fontcolor); 
+    color: var(--headerfontcolor); 
 }
 
 .nav li, .nav > li > a{
@@ -463,8 +467,8 @@ li#animate:hover #animate-arrow, li#photoshop:hover #photoshop-arrow{
 .top-link{
     position: fixed; 
     text-decoration: none;
-    color: var(--fontcolor); 
-    background-color: var(--accent2);
+    color: var(--headerfontcolor); 
+    background-color: var(--accent1);
     padding: .3em; 
     font-size: 1.8em;
     border-radius: 10%; 
@@ -473,7 +477,7 @@ li#animate:hover #animate-arrow, li#photoshop:hover #photoshop-arrow{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: .1em .1em rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
 /* TOOLTIPS */
@@ -491,8 +495,8 @@ li#animate:hover #animate-arrow, li#photoshop:hover #photoshop-arrow{
 .tooltiptext{
     opacity: 0;
     width: 90px;
-    background-color: var(--fontcolor);
-    color: whitesmoke;
+    background-color: var(--accent1);
+    color: var(--headerfontcolor);
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
