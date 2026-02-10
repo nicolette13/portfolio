@@ -1,23 +1,40 @@
 iframe{
     width: 500px; 
     height: 281px; 
-}
-body{
-    background-color: pink;
-}
-p, div, h2{
     margin: 1em; 
 }
+
+p, div, h2, img, iframe{
+    margin: 1em; 
+}
+
+img{
+width:640px;
+
+}
+
+
 .credits a {
-    color: purple; 
+    color: purple; /*CHANGE LINK AND HOVER COLORS!! */
     transition: color 0.3s ease; 
 }
 .credits a:hover{
-    color: aquamarine;
+    color: aquamarine;  /*CHANGE LINK AND HOVER COLORS!! */
 }
 .credits{
     font-size: 60%; 
 }
 
+#branding-logo{
+    width: 200px;
+    height: 200px;
+}
 
+#branding-cards{
+    width: 340px; 
+}
+
+.social-banner{
+    width: 640px; 
+}
 

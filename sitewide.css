@@ -26,6 +26,7 @@ html {
   /* added styles */
   font-family: var(--fontfamily);
   font-size: var(--fontsize);
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -377,6 +378,7 @@ header{
     padding: 0; 
     background-color: var(--accent1);
     box-shadow: var(--boxshadow);
+    font-size: 110%; 
 }
 
 .nav::after{
@@ -418,6 +420,7 @@ header{
 
 .nav li:hover, .nav > li > a:hover{
     background-color: var(--accent2);
+    padding: 0.5em; 
 }
 
 #animate-dropdown, #photoshop-dropdown{
@@ -430,7 +433,7 @@ header{
 ul#animate-dropdown li, ul#photoshop-dropdown li{
     float: none; 
     background-color: var(--accent1);
-    font-size: 90%; 
+    font-size: 95%; 
     transition: all 0.3s ease-in-out;
 }
 
@@ -454,3 +457,51 @@ ul#animate-dropdown > li:hover, ul#photoshop-dropdown > li:hover{
 li#animate:hover #animate-arrow, li#photoshop:hover #photoshop-arrow{
     transform: rotate(180deg);
 }
+
+/* BACK TO TOP BUTTON */
+
+.top-link{
+    position: fixed; 
+    text-decoration: none;
+    color: var(--fontcolor); 
+    background-color: var(--accent2);
+    padding: .3em; 
+    font-size: 1.8em;
+    border-radius: 10%; 
+    bottom: 2em; 
+    right: 2em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .1em .1em rgba(0, 0, 0, .1);
+}
+
+/* TOOLTIPS */
+
+.tooltip{
+    position: fixed; 
+    display: flex;
+    cursor: pointer;
+    bottom: 105px;
+    right: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltiptext{
+    opacity: 0;
+    width: 90px;
+    background-color: var(--fontcolor);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute; 
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext{
+   opacity: 1;
+}
+
