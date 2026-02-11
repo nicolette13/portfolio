@@ -4,25 +4,60 @@ iframe{
     margin: 1em; 
 }
 
-p, div, h2, img, iframe{
+div{
     margin: 1em; 
 }
 
-img{
-width:640px;
-
+#magazine, .restoration-photo {
+width:540px;
 }
 
+h3{
+    font-size: 150%; 
+    margin-bottom: -.4em; 
+}
+
+.page-nav{
+    background-color: var(--accent2);
+    width: 290px;
+    border-radius: 10px;
+    padding: 10px; 
+    margin-left: 20px; 
+    box-shadow: 5px 5px 15px rgba(45, 36, 44, .2);
+}
+
+.pagenav-title{
+    font-size: 120%; 
+    font-weight: bold;
+    margin: 1em; 
+    color: var(--bodyfontcolor);
+}
+
+.page-nav a {
+    transition: color 0.3s ease-in-out;
+    color: var(--bodyfontcolor); 
+}
+
+.page-nav a:hover{
+    color: var(--accent3); 
+}
+
+
+.project-title{
+    text-align: center;
+    font-size: 200%; 
+}
+
+.project-info{
+    margin-top: 2em; 
+}
 
 .credits a {
-    color: purple; /*CHANGE LINK AND HOVER COLORS!! */
-    transition: color 0.3s ease; 
+    color: var(--accent3); 
 }
-.credits a:hover{
-    color: aquamarine;  /*CHANGE LINK AND HOVER COLORS!! */
-}
+
 .credits{
-    font-size: 60%; 
+    font-size: 70%; 
 }
 
 #branding-logo{
