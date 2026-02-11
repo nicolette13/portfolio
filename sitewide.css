@@ -40,6 +40,7 @@ html {
 
 body {
   margin: 0;
+  /* added styles */
   background-color: var(--bgcolor);
   color: var(--bodyfontcolor);
 }
@@ -369,13 +370,15 @@ template {
   display: none;
 }
 
+/* ADDED STYLES/RESETS */
+
 ul {
     list-style: none;
     text-decoration: none;
 }
 
 
-p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
+p, h1, h2, h3, h4, h5, h6, img, iframe, table, article, div{
   margin: 1em; 
   padding: .3em;
 }
@@ -472,52 +475,5 @@ ul#animate-dropdown > li:hover, ul#photoshop-dropdown > li:hover{
 
 li#animate:hover #animate-arrow, li#photoshop:hover #photoshop-arrow{
     transform: rotate(180deg);
-}
-
-/* BACK TO TOP BUTTON */
-
-.top-link{
-    position: fixed; 
-    text-decoration: none;
-    color: var(--headerfontcolor); 
-    background-color: var(--accent1);
-    padding: .3em; 
-    font-size: 1.8em;
-    border-radius: 10%; 
-    bottom: 2em; 
-    right: 2em; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-}
-
-/* TOOLTIPS */
-
-.tooltip{
-    position: fixed; 
-    display: flex;
-    cursor: pointer;
-    bottom: 105px;
-    right: 70px;
-    align-items: center;
-    justify-content: center;
-}
-
-.tooltiptext{
-    opacity: 0;
-    width: 90px;
-    background-color: var(--accent1);
-    color: var(--headerfontcolor);
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute; 
-    z-index: 1;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.tooltip:hover .tooltiptext{
-   opacity: 1;
 }
 
