@@ -120,6 +120,7 @@ img{
 
 .red, .blue, .yellow, .green, .violet, .orange, .blue-violet, .yellow-green, .red-orange, .blue-green, .gray, .beige, .purple{
     transition: color 0.3s ease-in-out; 
+    cursor: help; 
 }
 
 .red:hover{
