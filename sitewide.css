@@ -368,11 +368,16 @@ template {
   display: none;
 }
 
-ul, li{
+ul {
     list-style: none;
     text-decoration: none;
 }
 
+
+p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
+  margin: 1em; 
+  padding: .3em;
+}
 
 /* HEADER NAVIGATION */
 
