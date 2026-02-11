@@ -1,11 +1,17 @@
 iframe{
     width: 500px; 
     height: 281px; 
+    border: transparent; 
 }
 
 h3{
     font-size: 150%; 
     margin-bottom: -.4em; 
+}
+
+div{
+    margin: 1em;
+    padding: .3em; 
 }
 
 /* BACK TO TOP BUTTON */
@@ -32,8 +38,8 @@ h3{
     position: fixed; 
     display: flex;
     cursor: pointer;
-    bottom: 105px;
-    right: 70px;
+    bottom: 100px;
+    right: 50px;
     align-items: center;
     justify-content: center;
 }

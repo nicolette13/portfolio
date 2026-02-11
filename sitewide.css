@@ -2,15 +2,149 @@
 
 :root{
     --fontfamily: 'rubik', 'roboto', sans-serif; 
-    --headerfontcolor: #fefefe;
-    --bodyfontcolor: #393939;  
     --fontsize: 14px; 
-    --bgcolor: #fefefe; 
-    --accent1: #595758; 
-    --accent2: #ffe1fd; 
-    --accent3: #ce4f92; 
-    --boxshadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
 }
+
+/* LIGHT/DARK MODE */
+
+:root, html[data-theme='light']{
+  --lightoff: flex; 
+  --lighton: none; 
+  --headerfontcolor: #fefefe;
+  --bodyfontcolor: #393939;  
+  --bgcolor: #fefefe; 
+  --accent1: #595758; 
+  --accent2: #ffe1fd; 
+  --accent3: #ce4f92; 
+  --boxshadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
+}
+
+html[data-theme='dark']{
+  --lightoff: none; 
+  --lighton: flex; 
+  --bgcolor: #171717; 
+  --headerfontcolor: #efefef; 
+  --bodyfontcolor: #fefefe;
+  --accent1: #2c2c2c; 
+  --accent2: #ef72e6; 
+  --accent3: #ce4f92; 
+  --boxshadow: 0 15px 20px rgba(44, 44, 44, .5); 
+}
+
+html.theme-transition, html.theme-transition *, html.theme-transition *::before, html.theme-transition *::after{
+  transition: 0.3s; 
+  transition-delay: 0.3s;
+}
+
+@keyframes lightswitch {
+  50% {
+    transform: scaleX(-1);
+  }
+}
+
+
+
+#theme-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+  line-height: 0.1;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+  color: #b4b4b4;
+}
+
+.icon--sun {
+  transform: scale(0);
+  color: #ffa500;
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
+
+
+
+
+
+
+#lightoff, #lighton{
+  cursor: pointer;
+  font-size: 150%; 
+  position: absolute; 
+  transition: color 0.3s ease-in-out; 
+}
+
+#lightoff{
+  display: var(--lightoff); 
+
+}
+
+#lighton{
+  display: var(--lighton);
+}
+
+#lightoff:hover, #lighton:hover{
+  color: var(--accent3); 
+    animation: lightswitch 0.75s 1; 
+}
+
+
+
+/* FONT TOGGLES */
+#small{
+  font-size: 14px; 
+}
+
+#medium{
+  font-size: 18px; 
+}
+
+#large{
+  font-size: 22px; 
+}
+
+/* TIPPY TOOLTIPS */
+
+.tippy-box[data-theme~='custom']{
+  background-color: var(--accent3);
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--accent3);
+}
+.tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--accent3);
+}
+.tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--accent3);
+}
+.tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--accent3);
+}
+
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -378,7 +512,7 @@ ul {
 }
 
 
-p, h1, h2, h3, h4, h5, h6, img, iframe, table, article, div{
+p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
   margin: 1em; 
   padding: .3em;
 }
