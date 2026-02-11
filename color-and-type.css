@@ -83,8 +83,8 @@ img{
     position: fixed; 
     display: flex;
     cursor: pointer;
-    bottom: 100px;
-    right: 50px;
+    bottom: 110px;
+    right: 70px;
     align-items: center;
     justify-content: center;
 }
