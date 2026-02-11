@@ -221,6 +221,7 @@ tbody tr:nth-child(odd){
 
 #fair-color1:hover, #fair-color2:hover, #reds-one:hover, #reds-two:hover, #mint-one:hover, #mint-two:hover, #pink-one:hover, #pink-two:hover, #summer-one:hover, #summer-two:hover, #autumn-one:hover, #autumn-two:hover, #academia-one:hover, #academia-two:hover{
     opacity: 1; 
+    cursor: help; 
 }
 
 #fair-color1{
@@ -303,6 +304,7 @@ tbody tr:nth-child(odd){
 
 #fair-color3:hover, #fair-color4:hover, #fair-color5:hover, #reds-three:hover, #reds-four:hover, #reds-five:hover, #mint-three:hover, #mint-four:hover, #mint-five:hover, #pink-three:hover, #pink-four:hover, #pink-five:hover, #summer-three:hover, #summer-four:hover, #summer-five:hover, #autumn-three:hover, #autumn-four:hover, #autumn-five:hover, #academia-three:hover, #academia-four:hover, #academia-five:hover{
     opacity: 1; 
+    cursor: help; 
 }
 
 #fair-color3{
