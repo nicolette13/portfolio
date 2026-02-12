@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box; 
+}
+
 /* VARIABLES */
 
 :root{
@@ -5,11 +9,9 @@
     --fontsize: 14px; 
 }
 
-/* LIGHT/DARK MODE */
+/* LIGHT/DARK MODE VARIABLES */
 
 :root, html[data-theme='light']{
-  --lightoff: flex; 
-  --lighton: none; 
   --headerfontcolor: #fefefe;
   --bodyfontcolor: #393939;  
   --bgcolor: #fefefe; 
@@ -20,8 +22,6 @@
 }
 
 html[data-theme='dark']{
-  --lightoff: none; 
-  --lighton: flex; 
   --bgcolor: #171717; 
   --headerfontcolor: #efefef; 
   --bodyfontcolor: #fefefe;
@@ -31,91 +31,85 @@ html[data-theme='dark']{
   --boxshadow: 0 15px 20px rgba(44, 44, 44, .5); 
 }
 
-html.theme-transition, html.theme-transition *, html.theme-transition *::before, html.theme-transition *::after{
-  transition: 0.3s; 
-  transition-delay: 0.3s;
+/* LIGHT/DARK MODE TOGGLE BUTTON */
+
+.theme-toggles-container{
+  float: right; 
+  display: flex; 
+  margin-right: 20px; 
+  margin-top: 1rem; 
 }
 
-@keyframes lightswitch {
-  50% {
-    transform: scaleX(-1);
-  }
+.checkbox{
+  opacity: 0; 
 }
 
+.theme-toggle{
+  width: 50px; 
+  height: 26px; 
+  background-color: var(--bodyfontcolor);
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px; 
+  position: relative;
+  border-radius: 50px;
+  margin-top: 5px; 
+  margin-right: -10px;
+}
 
+i.fa-sun, i.fa-moon{
+  font-size: 17px; 
+  cursor: pointer; 
+}
 
-#theme-toggle {
-  width: 56px;
-  height: 56px;
+i.fa-sun{
+  color: #ff8c00;
+}
+
+i.fa-moon{
+  color: #89cff0;
+}
+
+.toggle-cover{
+  width: 20px; 
+  height: 20px; 
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  line-height: 1;
+  background-color: var(--headerfontcolor);
+  position: absolute;
+  transition: transform 0.2s linear;
 }
 
-.input {
-  display: none;
+.checkbox:checked + .theme-toggle{
+  background-color: #fef6f6;
 }
 
-.icon {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  transition: transform 500ms;
-  line-height: 0.1;
+.checkbox:checked + .theme-toggle .toggle-cover{
+  background-color: var(--accent1);
+    transform: translateX(20px);
 }
 
-.icon--moon {
-  transition-delay: 200ms;
-  color: #b4b4b4;
+/* FONT SIZE BUTTONS */
+
+.font-btns{
+  margin-left: 2rem;
+  align-items: flex-end;
+  display: flex; 
 }
 
-.icon--sun {
-  transform: scale(0);
-  color: #ffa500;
+button.font-toggle{
+  background-color: var(--accent1);
+  border-width: .1px; 
+  border-radius: 3px; 
+  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--headerfontcolor);
+  cursor: pointer; 
+  transition: all 0.3s ease;
 }
 
-#switch:checked + .icon--moon {
-  transform: rotate(360deg) scale(0);
-}
-
-#switch:checked ~ .icon--sun {
-  transition-delay: 200ms;
-  transform: scale(1) rotate(360deg);
-}
-
-
-
-
-
-
-
-#lightoff, #lighton{
-  cursor: pointer;
-  font-size: 150%; 
-  position: absolute; 
-  transition: color 0.3s ease-in-out; 
-}
-
-#lightoff{
-  display: var(--lightoff); 
-
-}
-
-#lighton{
-  display: var(--lighton);
-}
-
-#lightoff:hover, #lighton:hover{
-  color: var(--accent3); 
-    animation: lightswitch 0.75s 1; 
-}
-
-
-
-/* FONT TOGGLES */
 #small{
   font-size: 14px; 
+  margin-right: 5px; 
 }
 
 #medium{
@@ -124,7 +118,9 @@ html.theme-transition, html.theme-transition *, html.theme-transition *::before,
 
 #large{
   font-size: 22px; 
+  margin-left:5px; 
 }
+
 
 /* TIPPY TOOLTIPS */
 
@@ -177,6 +173,7 @@ body {
   /* added styles */
   background-color: var(--bgcolor);
   color: var(--bodyfontcolor);
+  transition: all 0.3s ease; 
 }
 
 /**
@@ -526,6 +523,7 @@ header{
     box-shadow: var(--boxshadow);
     font-size: 110%; 
     color: var(--headerfontcolor); 
+    transition: all 0.3s ease;
 }
 
 .nav::after{
