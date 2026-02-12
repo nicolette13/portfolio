@@ -30,3 +30,22 @@ tippy('[data-tippy-content', {
             }
         }
     toggleBtn.addEventListener('change', changeTheme, false); 
+
+    
+// TOGGLE FONT SIZES
+
+let smallBtn = document.getElementById('small'); 
+let medBtn = document.getElementById('medium'); 
+let largeBtn = document.getElementById('large'); 
+
+smallBtn.addEventListener('click', function(e){
+    document.body.style.fontSize = '14px';
+}); 
+
+medBtn.addEventListener('click', function(e){
+    document.body.style.fontSize = '18px';
+}); 
+
+largeBtn.addEventListener('click', function(e){
+    document.body.style.fontSize = '22px'; 
+}); 
