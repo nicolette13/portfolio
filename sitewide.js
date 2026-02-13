@@ -12,7 +12,7 @@ tippy('[data-tippy-content', {
 
  const toggleBtn = document.querySelector('input[type="checkbox"]');
 
- const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; 
+ const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); 
         if(currentTheme){
             document.documentElement.setAttribute('data-theme', currentTheme);
             if(currentTheme === 'dark'){
