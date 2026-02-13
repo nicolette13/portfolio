@@ -57,7 +57,8 @@
        .collapse-container{
         max-height: 0; 
         overflow: hidden; 
-        transition: max-height 0.3s linear; 
+        transition: max-height 0.3s linear;
+        margin: 0;  
        }
 
        ul.collapse-container li:first-child{
@@ -186,5 +187,25 @@
 <!-- sitewide JS -->
 <script src="sitewide.js"></script>
 
+
+<script>
+
+// ACCORDION MENUS 
+
+ let collapseBtn = document.getElementsByClassName('collapse-btn');
+      let i; 
+
+      for (i = 0; i < collapseBtn.length; i++) {
+        collapseBtn[i].addEventListener('click', function(){
+            this.classList.toggle('active'); 
+            let collapseSection = this.nextElementSibling; 
+            if(collapseSection.style.maxHeight){
+                collapseSection.style.maxHeight = null; 
+            } else{
+                collapseSection.style.maxHeight= collapseSection.scrollHeight + 'px'; 
+            }
+        }); 
+      }
+</script>
 </body>
 </html>
