@@ -31,7 +31,7 @@ tippy('[data-tippy-content', {
         }
     toggleBtn.addEventListener('change', changeTheme, false); 
 
-    
+
 // TOGGLE FONT SIZES
 
 let smallBtn = document.getElementById('small'); 
@@ -49,3 +49,20 @@ medBtn.addEventListener('click', function(e){
 largeBtn.addEventListener('click', function(e){
     document.body.style.fontSize = '22px'; 
 }); 
+
+// RÉSUMÉ ACCORDION MENUS 
+
+ let collapseBtn = document.getElementsByClassName('collapse-btn');
+      let i; 
+
+      for (i = 0; i < collapseBtn.length; i++) {
+        collapseBtn[i].addEventListener('click', function(){
+            this.classList.toggle('active'); 
+            let collapseSection = this.nextElementSibling; 
+            if(collapseSection.style.maxHeight){
+                collapseSection.style.maxHeight = null; 
+            } else{
+                collapseSection.style.maxHeight= collapseSection.scrollHeight + 'px'; 
+            }
+        }); 
+      }

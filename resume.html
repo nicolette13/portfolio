@@ -29,17 +29,56 @@
         text-align: center;
         font-size: 110%; 
         margin-bottom: 20px; 
+        margin-left: 0; 
+        margin-right: 0; 
        }
 
-       .title{
-        float: left;
+       button.collapse-btn{
         font-size: 150%; 
-        margin-left: 3em;
+        background-color: #b6b2ab;
+        width: 100%; 
+        border: none; 
+        padding: 10px; 
+        text-align: left;
+        font-weight: bold;
+        cursor: pointer; 
+        color: #fefefe; 
        }
 
-       ul{
-        margin: 3em;
-        padding: 2em;
+       .collapse-btn:after{
+        content: '\002B';
+         font-weight: bold;
+         float: right; 
+         margin-right: 10px; 
+         font-size: 130%; 
+         color: #fefefe; 
+       }
+
+       .collapse-container{
+        max-height: 0; 
+        overflow: hidden; 
+        transition: max-height 0.3s linear; 
+       }
+
+       ul.collapse-container li:first-child{
+        padding-top: 30px; 
+       }
+
+       ul.collapse-container li:last-child{
+        padding-bottom: 30px;
+       }
+
+       ul.collapse-container li{
+        margin: 5px; 
+       }
+
+       .collapse-container.active{
+        max-height: 200px; 
+        overflow:visible; 
+       }
+
+       .active::after{
+        content: '\2212'; 
        }
 
        #education-list, #skills-list, #certifications-list{
@@ -98,12 +137,12 @@
         <button id="large" class="font-toggle" data-tippy-content="switch to large font">A</button>
            
 </div>
-    
     </div>
 
-    
+<!-- page title    -->
      <h1 class="page-title">Résumé</h1>
 
+     <!-- contact -->
 <p id="contact">
     <i class="fa fa-mobile-screen"></i>
     <span id="phone">(561) 373-5220</span> |
@@ -113,13 +152,14 @@
     <span id="location">Miami, FL</span>
 </p>
 
-<h2 class="title">Education:</h2>
-    <ul id="education-list">
+<!-- resume sections -->
+<button class="collapse-btn">Education:</button>
+    <ul class="collapse-container">
         <li>Associate in Arts &dash; Palm Beach State College </li>
     </ul>
 
-<h2 class="title" id="skills">Skills:</h2>
-    <ul id="skills-list">
+    <button class="collapse-btn" id="skills">Skills</button>
+    <ul class="collapse-container">
             <li id="languages"><strong>Languages: </strong>
                 HTML5, CSS3, JavaScript
            </li>
@@ -127,9 +167,8 @@
             <li id="tools"><strong>Design Tools:</strong> Photoshop, Illustrator, Animate, Dreamweaver</li>
     </ul>
 
-
-   <h2 class="title">Certifications:</h2>
-    <ul id="certifications-list">
+<button class="collapse-btn">Certifications:</button>
+    <ul class="collapse-container">
             <li>Microsoft 365</li>
             <li>Adobe Certified Expert in Web Design (ACE)</li>
     </ul>
@@ -144,6 +183,7 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 
+<!-- sitewide JS -->
 <script src="sitewide.js"></script>
 
 </body>
