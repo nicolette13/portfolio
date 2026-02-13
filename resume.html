@@ -15,6 +15,20 @@
     <title>Résumé</title>
 
     <style>
+
+        /* VARIABLES */
+
+        html[data-theme="light"]{
+            --fontcolor1: #fefefe;
+            --fontcolor2: #393939; 
+            --accent: #b6b2ab;
+        }
+
+        html[data-theme="dark"]{
+            --fontcolor1: #fefefe; 
+            --fontcolor2: #f1f1f1;
+            --accent: #3f3e3b; 
+        }
        
        .page-title{
         font-size: 250%; 
@@ -35,14 +49,14 @@
 
        button.collapse-btn{
         font-size: 150%; 
-        background-color: #b6b2ab;
+        background-color: var(--accent);
         width: 100%; 
         border: none; 
         padding: 10px; 
         text-align: left;
         font-weight: bold;
         cursor: pointer; 
-        color: #fefefe; 
+        color: var(--fontcolor1); 
        }
 
        .collapse-btn:after{
@@ -51,7 +65,7 @@
          float: right; 
          margin-right: 10px; 
          font-size: 130%; 
-         color: #fefefe; 
+         color: var(--fontcolor1); 
        }
 
        .collapse-container{
@@ -86,7 +100,7 @@
         text-align: right;
         margin-top: -10px;
         border-radius: 10px;
-        color: #393939;
+        color: var(--fontcolor2);
         font-size: 110%;
        }
 
