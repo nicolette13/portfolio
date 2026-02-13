@@ -12,6 +12,14 @@ tippy('[data-tippy-content', {
 
  const toggleBtn = document.querySelector('input[type="checkbox"]');
 
+ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; 
+        if(currentTheme){
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            if(currentTheme === 'dark'){
+                toggleBtn.checked = true; 
+            }
+        }
+
     function changeTheme(e){
         if(e.target.checked){
             document.documentElement.setAttribute('data-theme', 'dark'); 
@@ -21,14 +29,7 @@ tippy('[data-tippy-content', {
             localStorage.setItem('theme', 'light'); 
         }
     }
-
-    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; 
-        if(currentTheme){
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            if(currentTheme === 'dark'){
-                toggleBtn.checked = true; 
-            }
-        }
+    
     toggleBtn.addEventListener('change', changeTheme, false); 
 
 

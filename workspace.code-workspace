@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../Quiz_starting_files"
 		}
 	],
 	"settings": {}
