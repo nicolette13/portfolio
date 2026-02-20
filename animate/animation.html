@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external stylesheets -->
+    <link rel="stylesheet" href="../sitewide.css">
+    <link rel="stylesheet" href="../showcase.css">
+     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/f69872f1b2.js" crossorigin="anonymous"></script>
+ <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Adobe Animate Showcase</title>
+</head>
+<body>
+<!-- boostrap nav bar -->
+ <header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/portfolio/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio/resume.html">Résumé</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Adobe Animate Showcase
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="#">Character Animation</a></li>
+            <li><a class="dropdown-item" href="/portfolio/animate/infographic.html">Interactive Infographic</a></li>
+            <li><a class="dropdown-item" href="/portfolio/animate/advertisement.html">Interactive Advertisement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Photoshop Showcase
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/portfolio/photoshop/magazine.html">Digital Magazine Cover</a></li>
+            <li><a class="dropdown-item" href="/portfolio/photoshop/branding.html">Example Branding Package</a></li>
+            <li><a class="dropdown-item" href="/portfolio/photoshop/restoration.html">Photo Restoration</a></li>
+          </ul>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="/portfolio/color-theory.html">Color Theory</a>
+        </li> <li class="nav-item">
+          <a class="nav-link" href="/portfolio/typography.html">Typography</a>
+        </li>
+      </ul>
+
+      <!-- light/dark mode toggle -->
+    <div class="theme-toggles-container">
+               <input type="checkbox" class="checkbox" id="checkbox">
+               <label for="checkbox" class="theme-toggle">
+               <i class="fa-regular fa-sun" data-tippy-content="switch to light mode"></i>
+               <i class="fa-regular fa-moon" data-tippy-content="switch to dark mode"></i>
+               <div class="toggle-cover"></div>
+            </label>
+
+
+<!-- font size button -->
+ <div class="font-btns">
+        <button id="small" class="font-toggle" data-tippy-content="switch to small font">A</button>
+        <button id="medium" class="font-toggle" data-tippy-content="switch to medium font">A</button>
+        <button id="large" class="font-toggle" data-tippy-content="switch to large font">A</button>
+           
+</div>
+    
+    </div>
+        </div>
+    </nav>
+ </header>
+    
+
+<div class="card" style="width: 38rem;">
+
+  <iframe src="https://www.youtube.com/embed/MOswsi-GPFc?si=njUfW4ojCN-Hyqmm" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div class="card-body">
+    <h2 class="card-title project-title">Character Animation</h2>
+    <div class="card-text">
+        <p class="project-info">Create a short animation of a character performing a simple action. The purpose of this project is to demonstrate an understanding of basic design principles as well as proficiency in Adobe Animate.</p>
+      <button class="collapse-btn"><p class="credits-title">Credits: <i class="fa fa-angle-down" id="arrow-down"></i></p></button>
+        <p class="credits" id="animation-credits">background retrieved from <a href="https://www.freepik.com/free-vector/night-living-room-with-fireplace_267091040.htm#fromView=keyword&page=1&position=21&uuid=558256ae-76cc-4593-a40a-6bcbb813e90f">Freepik</a> and slightly edited using the AI editor <br>
+    frames used for fire animation designed by <a href="https://www.freepik.com/free-vector/variety-flames_1078768.htm#fromView=search&page=1&position=48&uuid=f2d02f8b-2ffa-42b5-9702-b0f3a3d0ecc9">Freepik</a><br>
+    crackling fire and knitting needles soundbite retrieved from <a href="https://pixabay.com/sound-effects/">Pixabay</a></p>
+    </div>
+  </div>
+</div>
+  
+
+   <!-- TIPPY TOOLTIPS -->
+ <!-- Development -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<script src="../sitewide.js"></script>
+<!-- boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+
+  // CREDIT COLLAPSE 
+
+let collapseBtn = document.getElementsByClassName('collapse-btn');
+let animCredits = document.getElementById('animation-credits'); 
+let arrowDown = document.getElementById('arrow-down'); 
+let i; 
+for(i=0; i<collapseBtn.length; i++){
+  collapseBtn[i].addEventListener('click', function(){
+    if(animCredits.style.display === 'none'){
+      animCredits.style.display = 'block';
+      arrowDown.classList.add('rotate'); 
+    }else{
+      animCredits.style.display = 'none'; 
+      arrowDown.classList.remove('rotate'); 
+    }
+  })
+}
+
+</script>
+
+</body>
+</html>

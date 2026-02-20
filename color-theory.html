@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external stylesheets -->
+    <link rel="stylesheet" href="sitewide.css">
+    <link rel="stylesheet" href="color-and-type.css">
+     <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/f69872f1b2.js" crossorigin="anonymous"></script>
+     <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Color Theory</title>
+</head>
+<body>
+     <!-- boostrap nav bar -->
+ <header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/portfolio/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio/resume.html">Résumé</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Adobe Animate Showcase
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/portfolio/animate/animation.html">Character Animation</a></li>
+            <li><a class="dropdown-item" href="/portfolio/animate/infographic.html">Interactive Infographic</a></li>
+            <li><a class="dropdown-item" href="/portfolio/animate/advertisement.html">Interactive Advertisement</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Photoshop Showcase
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/portfolio/photoshop/magazine.html">Digital Magazine Cover</a></li>
+            <li><a class="dropdown-item" href="/portfolio/photoshop/branding.html">Example Branding Package</a></li>
+            <li><a class="dropdown-item" href="/portfolio/photoshop/restoration.html">Photo Restoration</a></li>
+          </ul>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link active" href="#">Color Theory</a>
+        </li> <li class="nav-item">
+          <a class="nav-link" href="/portfolio/typography.html">Typography</a>
+        </li>
+      </ul>
+
+      <!-- light/dark mode toggle -->
+    <div class="theme-toggles-container">
+               <input type="checkbox" class="checkbox" id="checkbox">
+               <label for="checkbox" class="theme-toggle">
+               <i class="fa-regular fa-sun" data-tippy-content="switch to light mode"></i>
+               <i class="fa-regular fa-moon" data-tippy-content="switch to dark mode"></i>
+               <div class="toggle-cover"></div>
+            </label>
+
+
+<!-- font size button -->
+ <div class="font-btns">
+        <button id="small" class="font-toggle" data-tippy-content="switch to small font">A</button>
+        <button id="medium" class="font-toggle" data-tippy-content="switch to medium font">A</button>
+        <button id="large" class="font-toggle" data-tippy-content="switch to large font">A</button>
+           
+</div>
+    
+    </div>
+        </div>
+    </nav>
+ </header>
+    
+<!-- page title -->
+     <h1 class="page-title">Color Theory</h1>
+   
+
+<!-- page navigation -->
+<nav class="page-nav">
+    <span class="pagenav-title">Jump to:</span>
+        <ul>
+            <li><a href="#definitions">Definitions</a></li>
+            <li><a href="#color-schemes">Color Schemes table</a></li>
+            <li><a href="#color-article-title">Color Theory in Web Design article</a></li>
+        </ul>
+     </nav>
+
+<!-- back to top link button -->
+<a href="#" class="top-link" aria-label="back to top" data-tippy-content="back to top"><i class="fa-regular fa-circle-up"></i></a>
+
+     <p class="overview"><strong>Color Theory</strong> refers to the study of how colors work together to influence perceptions and evoke emotions.</p>
+
+    <h2 id="definitions">Definitions</h2>
+    <span id="hint">(Hover over each color name to see it in action!)</span>
+    <ol>
+        <li><strong>Primary colors</strong> &dash; pure; cannot be created by mixing other colors. The three primary colors are <span class="red">red</span>, <span class="blue">blue</span>, and <span class="yellow">yellow</span>.</li>
+        <li><strong>Secondary colors</strong> &dash; formed by mixing two primary colors. The three secondary colors are <span class="green">green</span>, <span class="violet">violet</span>, and <span class="orange">orange</span>.</li>
+        <li><strong>Tertiary colors</strong> &dash; formed by mixing a primary color with a secondary color. Some examples of tertiary colors include <span class="blue-violet">blue&dash;violet</span>, <span class="yellow-green">yellow&dash;green</span>, and <span class="red-orange">red&dash;orange</span>.</li>
+        <li><strong>Triadic colors</strong> &dash; colors that are spaced out in even increments on the color wheel, such as <span class="red">red</span>, <span class="yellow">yellow</span>, and <span class="blue">blue</span>.</li>
+        <li><strong>Complementary colors</strong> &dash; colors that are opposites on the color wheel, such as <span class="blue">blue</span> and <span class="orange">orange</span>.</li>
+        <li><strong>Split colors</strong> &dash; a base color and two colors that would be balanced on the opposite side of the color wheel. An example would be a base color of <span class="red">red</span> &mdash; the split&dash;complements would be <span class="blue-green">blue&dash;green</span> and <span class="yellow-green">yellow&dash;green</span>.<sup>1</sup></li>
+        <li><strong>Analogous colors</strong> &dash; colors that share a space on the color wheel, such as <span class="orange">orange</span>, <span class="red-orange">red&dash;orange</span>, and <span class="red">red</span>.</li>
+        <li><strong>Saturation</strong> &dash; the degree of purity, brightness, and vividness within a color.</li>
+        <li><strong>Hue</strong> &dash; the purest form of a color.</li>
+        <li><strong>Tint</strong> &dash; created when white is mixed into a color.</li>
+        <li><strong>Shade</strong> &dash; created when black is mixed into a color.</li>
+        <li><strong>Value</strong> &dash; the relative lightness or darkness of a color.</li>
+        <li><strong>Contrast</strong> &dash; difference in hue.</li>
+        <li><strong>Vibrancy</strong> &dash; refers to the intensity of a color. A high-vibrancy color is saturated and bold, while a low-vibrancy color is more muted.</li>
+        <li><strong>Monochormatic</strong> &dash; colors very blended with minimal hue variety.</li>
+        <li><strong>Color scheme</strong> &dash; combination of all colors used within a project, arranged in a manner that enhances the overall design.</li>
+        <li><strong>Neutral colors</strong> &dash; often perceived as the absence of color, they actually typically contain subtle undertones. Some examples of neutral colors include <span class="gray">gray</span> and <span class="beige">beige</span>.</li>
+        <li><strong>Warm colors</strong> &dash; bring energy and intensity to a design and can often invoke strong emotions. Some examples of warm colors include <span class="red">red</span> and <span class="orange">orange</span>.</li>
+        <li><strong>Cool colors</strong> &dash; contribute to a calm and soothing atmosphere and can invoke feelings of peace and tranquility. Some examples of cool colors include <span class="blue">blue</span> and <span class="purple">purple</span>.</li>
+        <li><strong>Whitespace</strong> &dash; empty space.</li>
+    </ol>
+    <p class="sources"><strong>Sources:</strong> Webucator <br>
+        <sup>1</sup> <a href="https://etchrlab.com/blogs/news/split-complementary-color-schemes?srsltid=AfmBOorU_nccrL2OlHbTe-RwRvixSMUTbhNYbqF8BCXGLp6R6cxtsQ9Q">Simplifying Color Choice with Split Complementary Color Schemes</a> &dash; EtchrLab</p>
+
+<h2 id="color-schemes">Example Color Schemes</h2>
+
+<table class="table table-striped table-sm table-bordered">
+    <div class="table-responsive-sm">
+    <tbody>
+        <tr>
+            <th class="theader table-dark">Scheme Name</th>
+            <th class="theader table-dark">Colors</th>
+        </tr>
+        <tr>
+           <td class="scheme-title">Fun at the Fair</td>
+           <td class="scheme_colors"> <span id="fair-color1"> #FF0F80</span>      
+          <span id="fair-color2">#FE4E00</span><span id="fair-color3">#FFAE03</span><span id="fair-color4">#E67F0D</span><span id="fair-color5">#E9190F</span></td> 
+        </tr>
+        <tr>
+            <td class="scheme-title">Radical Reds</td>
+            <td class="scheme_colors">
+                <span id="reds-one">#AD2831</span> <span id="reds-two">#800E13</span><span id="reds-three">#640D14</span><span id="reds-four">#38040E</span><span id="reds-five">#250902</span>
+        </tr>
+    <tr>
+        <td class="scheme-title">Blackberry Mint</td>
+        <td class="scheme_colors">
+        <span id="mint-one">#7E78D2</span>
+        <span id="mint-two">#BBDBD1</span><span id="mint-three">#BDEDE0</span><span id="mint-four">#B6B8D6</span><span id="mint-five">#6F58C9</span>
+        </td>
+</tr>
+    <tr>
+        <td class="scheme-title">Pastel Pink Paradise</td>
+        <td  class="scheme_colors">
+        <span id="pink-one">#595758</span>
+        <span id="pink-two">#FF92CC</span><span id="pink-three">#FFD5FB</span><span id="pink-four">#FFE4F3</span><span id="pink-five">#FFC8FB</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="scheme-title">Summer Nostalgia</td>
+        <td  class="scheme_colors">
+        <span id="summer-one">#F1A09D</span>
+        <span id="summer-two">#EEC0C</span><span id="summer-three">#FFF07C</span><span id="summer-four">#80FF72</span><span id="summer-five">#7EE8FA</span>
+</td>
+    </tr>
+    <tr>
+        <td class="scheme-title">Autumn Arrival</td>
+        <td  class="scheme_colors">
+        <span id="autumn-one">#E24E1B</span>    
+        <span id="autumn-two">#DA7635</span><span id="autumn-three">#DEDBB0</span><span id="autumn-four">#CA9569</span><span id="autumn-five">#7C5546</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="scheme-title">Dark Academia</td>
+        <td  class="scheme_colors">
+        <span id="academia-one">#400406</span>
+        <span id="academia-two">#515A47</span><span id="academia-three">#D7BE82</span><span id="academia-four">#7A4419</span><span id="academia-five">#755C1B</span>
+        </td>
+    </tr>
+    </tbody>
+    </div>
+</table>
+
+
+
+<article>
+    <h2 id="color-article-title">Color Theory in Web Design</h2>
+    <p class="color-article">When it comes to web design, color goes beyond being simply an aesthetic choice &mdash; it is a tool used to evoke strong emotions, influence perceptions, and assists in setting the tone of a project. This article explores the role of color in two significantly differing websites: <a href="https://dashingdiva.com/">Dashing Diva</a>, a DIY nail/beauty brand, and <a href="https://open.spotify.com/">Spotify</a>, a global music&dash;streaming platform.</p>
+    <p class="color-article">Dashing Diva's UI utilizes bright and muted colors. The white background permits the vibrant colors and unique designs of the products to "pop" against the page. The black text against the white also provides sufficient contrast, making the words legible and accessible while still allowing the products to shine.</p>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/201140087@N08/55066063711/in/dateposted-ff/" title="dashingdiva_website1"><img src="https://live.staticflickr.com/65535/55066063711_0780809566_c.jpg"  alt="dashingdiva_website1"></a>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/201140087@N08/55066314934/in/dateposted-ff/" title="dashingdiva_website2"><img src="https://live.staticflickr.com/65535/55066314934_190467fd25_c.jpg" alt="dashingdiva_website2"></a>
+    <p>Additionally, the pastel pink used for the header and footer bar aids in establishing a feminine tone.</p>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/201140087@N08/55066248988/in/dateposted-ff/" title="DD_headerbar"><img src="https://live.staticflickr.com/65535/55066248988_4e8ea5fc29.jpg" width="500" height="24" alt="DD_headerbar"></a>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/201140087@N08/55066315504/in/dateposted-ff/" title="DD_footerbar"><img src="https://live.staticflickr.com/65535/55066315504_c54d9bff2c.jpg" width="500" height="165" alt="DD_footerbar"></a>
+    <p class="color-article">Spotify's UI is a case study in brand recognition. Its logo features an instantly recognizable color &mdash; Spotify green. </p>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/201140087@N08/55066248633/in/dateposted-ff/" title="Spotify_Full_Logo_RGB_Green"><img src="https://live.staticflickr.com/65535/55066248633_43eef55f81.jpg" alt="Spotify_Full_Logo_RGB_Green"></a>
+    <p class="color-article"><a href="https://developer.spotify.com/documentation/design#using-our-logo">Source</a></p>
+    <p><a href="https://developer.spotify.com/documentation/design#using-our-logo">As per the official guidelines</a> laid out by Spotify, “the green logo should only be used on a black or white background,” allowing the primary green colorway to take center stage. Furthermore, the minimal palette and dark background help facilitate an immersive environment, allowing the focus to remain on the service (music streaming) in contrast to Dashing Diva, where the focus is on the variety of products. 
+    </p>
+    <p class="color-article">In essence, color is used efficiently on each website to reflect their differing strategic goals. Dashing Diva uses minimal, muted colors in the UI to allow the merchandise to take center stage, while Spotify utilizes color for brand recognition and usability. 
+    </p>
+</article>
+
+<!-- TIPPY TOOLTIPS -->
+ <!-- Development -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<!-- sitewide.js  -->
+<script src="sitewide.js"></script>
+
+<!-- boostrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

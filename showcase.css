@@ -1,0 +1,124 @@
+iframe{
+    width: 500px; 
+    height: 281px; 
+    border: transparent; 
+}
+
+h3{
+    font-size: 150%; 
+    margin-bottom: -.4em; 
+}
+
+div#animation_container{
+    margin: 1em;
+    padding: .3em; 
+}
+
+/* BACK TO TOP BUTTON */
+
+.top-link{
+    position: fixed; 
+    text-decoration: none;
+    color: var(--headerfontcolor); 
+    background-color: var(--accent1);
+    padding: .3em; 
+    font-size: 1.8em;
+    border-radius: 10%; 
+    bottom: 2em; 
+    right: 2em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    z-index: 1000; 
+}
+
+
+/* PAGE NAVIGATION */
+
+.page-nav{
+    background-color: var(--accent2);
+    width: 290px;
+    border-radius: 10px;
+    padding: 10px; 
+    margin-left: 20px; 
+    box-shadow: 5px 5px 15px rgba(45, 36, 44, .2);
+}
+
+.pagenav-title{
+    font-size: 120%; 
+    font-weight: bold;
+    margin: 1em; 
+    color: var(--bodyfontcolor);
+}
+
+.page-nav a {
+    transition: color 0.3s ease-in-out;
+    color: var(--bodyfontcolor); 
+    text-decoration: none;
+}
+
+.page-nav a:hover{
+    color: var(--accent3); 
+}
+
+/* PROJECT TITLES AND INFO */
+
+.project-title{
+    text-align: center;
+    font-size: 200%; 
+}
+
+/* CREDITS/SOURCES */
+
+.collapse-btn{
+    background-color: transparent;
+    border: none; 
+}
+.credits-title{
+    font-size: 70%; 
+    font-weight: bolder;
+    cursor: pointer; 
+    margin-top: 50px; 
+}
+.credits a {
+    color: var(--accent3); 
+}
+
+.credits{
+    font-size: 60%; 
+    display: none; 
+    transition: all 0.3s linear; 
+    margin-top: -20px; 
+}
+
+.fa-angle-down{
+    transition: transform 0.2s linear; 
+}
+
+.rotate{
+    transform: rotate(180deg); 
+}
+
+/* PHOTOSHOP IMAGES */
+
+#branding-logo{
+    width: 200px;
+    height: 200px;
+}
+
+#branding-cards{
+    width: 340px; 
+}
+
+.social-banner{
+    max-width: 400px; 
+}
+
+#magazine, .restoration-photo {
+max-width:540px;
+}
+
+div.card{
+    margin: 5rem auto; 
+}
