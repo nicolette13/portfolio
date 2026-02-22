@@ -60,7 +60,7 @@ span{
 
 /* responsive settings */
 
-@media screen and (min-width: 1900px){
+@media screen and (min-width: 1920px){
     #coding{
     width: 70%; 
     margin-right: 5%; 
@@ -73,6 +73,23 @@ span{
 
 #miami{
     width: 60%; 
+    margin-right: 5%; 
+}
+}
+
+@media screen and (max-width: 1920px) {
+ #coding{
+    width: 50%; 
+    margin-right: 5%; 
+}
+
+#collaboration{
+    width: 50%; 
+    margin-left: 5%; 
+}
+
+#miami{
+    width: 40%; 
     margin-right: 5%; 
 }
 }
