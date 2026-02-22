@@ -88,7 +88,7 @@ span{
     }
 
     .carousel-indicators button{
-        margin-top: -25%; 
+        margin-top: -20%; 
     }
 
     .contact{
@@ -139,8 +139,8 @@ span{
         padding: 0; 
     }
 
-    .carousel-indicators{
-        margin-bottom: -1rem; 
+    .carousel-indicators button{
+        margin-top: 1rem;
     }
 
     .d-flex img{
