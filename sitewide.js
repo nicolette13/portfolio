@@ -37,7 +37,7 @@ toggleBtn.addEventListener('change', changeTheme, false);
 let increaseBtn = document.getElementById('increase');
 let decreaseBtn = document.getElementById('decrease'); 
 let minFontSize = 8; 
-let maxFontSize = 30;  
+let maxFontSize = 26;  
 
 function changeFontSize(change){
   let htmlElem = document.documentElement;
