@@ -50,8 +50,8 @@ i.fa-sun, i.fa-moon{
   font-size: 110%; 
   cursor: pointer; 
   color: var(--bodyfontcolor); 
-  margin-top: 8.8px;
-  margin-right: 11px; 
+  margin-top: 48%;
+  margin-right: 8px; 
   transition: transform 0.2s ease-in-out;
 }
 
@@ -498,6 +498,22 @@ p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
 }
 
 /* RESPONSIVE STYLES */
+
+@media screen and (max-width: 920px){
+  i.fa-sun, i.fa-moon{
+    margin-left: -50%; 
+    margin-top: -70%;  
+  }
+
+  #increase, #decrease{
+    display: none; 
+  }
+
+  .tippy-box[data-theme~='custom']{
+    display: none; 
+  }
+
+}
 
 @media screen and (max-width: 540px){
   #increase, #decrease {
