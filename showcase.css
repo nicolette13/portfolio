@@ -89,7 +89,6 @@ div#animation_container{
     font-size: 60%; 
     display: none; 
     transition: all 0.3s linear; 
-    margin-top: -20px; 
 }
 
 .fa-angle-down{
