@@ -135,3 +135,25 @@ div.card{
         font-size: 90%; 
     }
 }
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 540px){
+    img{
+        width: 50%; 
+        height: auto; 
+    }
+
+    .top-link{
+        display: none; 
+    }
+
+    .page-nav{
+        width: 85%; 
+    }
+
+    #hint{
+        display: none; 
+    }
+
+}
