@@ -82,6 +82,7 @@ i.fa-moon{
 }
 
 /* TIPPY TOOLTIPS */
+
 .tippy-box[data-theme~='custom']{
   background-color: var(--accent1);
   color: var(--accentfontcolor);
