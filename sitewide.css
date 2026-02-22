@@ -499,7 +499,7 @@ p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
 
 /* RESPONSIVE STYLES */
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 992px){
   i.fa-sun, i.fa-moon{
     margin-left: -50%; 
     margin-top: -70%;  
@@ -515,7 +515,7 @@ p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
 
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 576px){
   #increase, #decrease {
     display: none; 
   }

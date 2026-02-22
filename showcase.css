@@ -116,9 +116,23 @@ div#animation_container{
 }
 
 #magazine, .restoration-photo {
-max-width:540px;
+    max-width: 540px;
 }
 
 div.card{
     margin: 5rem auto; 
+}
+
+@media screen and (max-width: 992px) {
+    #magazine, .restoration-photo{
+        max-width: 50%; 
+    }
+
+    div.card{
+        margin: 1rem auto; 
+    }
+
+    .project-info{
+        font-size: 90%; 
+    }
 }
