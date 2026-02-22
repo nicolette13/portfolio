@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- external stylesheets -->
-    <link rel="stylesheet" href="sitewide.css">
-    <link rel="stylesheet" href="color-and-type.css">
      <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +11,10 @@
     <script src="https://kit.fontawesome.com/f69872f1b2.js" crossorigin="anonymous"></script>
      <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- external stylesheets -->
+    <link rel="stylesheet" href="sitewide.css">
+    <link rel="stylesheet" href="color-and-type.css">
+            
     <title>Color Theory</title>
 </head>
 <body>
@@ -68,15 +69,11 @@
                <div class="toggle-cover"></div>
             </label>
 
-
-<!-- font size button -->
- <div class="font-btns">
-        <button id="small" class="font-toggle" data-tippy-content="switch to small font">A</button>
-        <button id="medium" class="font-toggle" data-tippy-content="switch to medium font">A</button>
-        <button id="large" class="font-toggle" data-tippy-content="switch to large font">A</button>
-           
-</div>
-    
+ <!-- font size buttons -->
+            <div class="font-btns-container">
+                <button class="btn" id="increase" data-tippy-content="increase font size">A<i class="fa fa-plus"></i></button>
+                <button class="btn" id="decrease" data-tippy-content="decrease font size">A<i class="fa fa-minus"></i></button>
+            </div>
     </div>
         </div>
     </nav>
@@ -99,31 +96,33 @@
 <!-- back to top link button -->
 <a href="#" class="top-link" aria-label="back to top" data-tippy-content="back to top"><i class="fa-regular fa-circle-up"></i></a>
 
+<!-- overview -->
      <p class="overview"><strong>Color Theory</strong> refers to the study of how colors work together to influence perceptions and evoke emotions.</p>
 
+ <!-- color theory definitions -->
     <h2 id="definitions">Definitions</h2>
     <span id="hint">(Hover over each color name to see it in action!)</span>
     <ol>
-        <li><strong>Primary colors</strong> &dash; pure; cannot be created by mixing other colors. The three primary colors are <span class="red">red</span>, <span class="blue">blue</span>, and <span class="yellow">yellow</span>.</li>
-        <li><strong>Secondary colors</strong> &dash; formed by mixing two primary colors. The three secondary colors are <span class="green">green</span>, <span class="violet">violet</span>, and <span class="orange">orange</span>.</li>
-        <li><strong>Tertiary colors</strong> &dash; formed by mixing a primary color with a secondary color. Some examples of tertiary colors include <span class="blue-violet">blue&dash;violet</span>, <span class="yellow-green">yellow&dash;green</span>, and <span class="red-orange">red&dash;orange</span>.</li>
-        <li><strong>Triadic colors</strong> &dash; colors that are spaced out in even increments on the color wheel, such as <span class="red">red</span>, <span class="yellow">yellow</span>, and <span class="blue">blue</span>.</li>
-        <li><strong>Complementary colors</strong> &dash; colors that are opposites on the color wheel, such as <span class="blue">blue</span> and <span class="orange">orange</span>.</li>
-        <li><strong>Split colors</strong> &dash; a base color and two colors that would be balanced on the opposite side of the color wheel. An example would be a base color of <span class="red">red</span> &mdash; the split&dash;complements would be <span class="blue-green">blue&dash;green</span> and <span class="yellow-green">yellow&dash;green</span>.<sup>1</sup></li>
-        <li><strong>Analogous colors</strong> &dash; colors that share a space on the color wheel, such as <span class="orange">orange</span>, <span class="red-orange">red&dash;orange</span>, and <span class="red">red</span>.</li>
-        <li><strong>Saturation</strong> &dash; the degree of purity, brightness, and vividness within a color.</li>
-        <li><strong>Hue</strong> &dash; the purest form of a color.</li>
-        <li><strong>Tint</strong> &dash; created when white is mixed into a color.</li>
-        <li><strong>Shade</strong> &dash; created when black is mixed into a color.</li>
-        <li><strong>Value</strong> &dash; the relative lightness or darkness of a color.</li>
-        <li><strong>Contrast</strong> &dash; difference in hue.</li>
-        <li><strong>Vibrancy</strong> &dash; refers to the intensity of a color. A high-vibrancy color is saturated and bold, while a low-vibrancy color is more muted.</li>
-        <li><strong>Monochormatic</strong> &dash; colors very blended with minimal hue variety.</li>
-        <li><strong>Color scheme</strong> &dash; combination of all colors used within a project, arranged in a manner that enhances the overall design.</li>
-        <li><strong>Neutral colors</strong> &dash; often perceived as the absence of color, they actually typically contain subtle undertones. Some examples of neutral colors include <span class="gray">gray</span> and <span class="beige">beige</span>.</li>
-        <li><strong>Warm colors</strong> &dash; bring energy and intensity to a design and can often invoke strong emotions. Some examples of warm colors include <span class="red">red</span> and <span class="orange">orange</span>.</li>
-        <li><strong>Cool colors</strong> &dash; contribute to a calm and soothing atmosphere and can invoke feelings of peace and tranquility. Some examples of cool colors include <span class="blue">blue</span> and <span class="purple">purple</span>.</li>
-        <li><strong>Whitespace</strong> &dash; empty space.</li>
+        <li class="definitions"><strong>Primary colors</strong> &dash; pure; cannot be created by mixing other colors. The three primary colors are <span class="red">red</span>, <span class="blue">blue</span>, and <span class="yellow">yellow</span>.</li>
+        <li class="definitions"><strong>Secondary colors</strong> &dash; formed by mixing two primary colors. The three secondary colors are <span class="green">green</span>, <span class="violet">violet</span>, and <span class="orange">orange</span>.</li>
+        <li class="definitions"><strong>Tertiary colors</strong> &dash; formed by mixing a primary color with a secondary color. Some examples of tertiary colors include <span class="blue-violet">blue&dash;violet</span>, <span class="yellow-green">yellow&dash;green</span>, and <span class="red-orange">red&dash;orange</span>.</li>
+        <li class="definitions"><strong>Triadic colors</strong> &dash; colors that are spaced out in even increments on the color wheel, such as <span class="red">red</span>, <span class="yellow">yellow</span>, and <span class="blue">blue</span>.</li>
+        <li class="definitions"><strong>Complementary colors</strong> &dash; colors that are opposites on the color wheel, such as <span class="blue">blue</span> and <span class="orange">orange</span>.</li>
+        <li class="definitions"><strong>Split colors</strong> &dash; a base color and two colors that would be balanced on the opposite side of the color wheel. An example would be a base color of <span class="red">red</span> &mdash; the split&dash;complements would be <span class="blue-green">blue&dash;green</span> and <span class="yellow-green">yellow&dash;green</span>.<sup>1</sup></li>
+        <li class="definitions"><strong>Analogous colors</strong> &dash; colors that share a space on the color wheel, such as <span class="orange">orange</span>, <span class="red-orange">red&dash;orange</span>, and <span class="red">red</span>.</li>
+        <li class="definitions"><strong>Saturation</strong> &dash; the degree of purity, brightness, and vividness within a color.</li>
+        <li class="definitions"><strong>Hue</strong> &dash; the purest form of a color.</li>
+        <li class="definitions"><strong>Tint</strong> &dash; created when white is mixed into a color.</li>
+        <li class="definitions"><strong>Shade</strong> &dash; created when black is mixed into a color.</li>
+        <li class="definitions"><strong>Value</strong> &dash; the relative lightness or darkness of a color.</li>
+        <li class="definitions"><strong>Contrast</strong> &dash; difference in hue.</li>
+        <li class="definitions"><strong>Vibrancy</strong> &dash; refers to the intensity of a color. A high-vibrancy color is saturated and bold, while a low-vibrancy color is more muted.</li>
+        <li class="definitions"><strong>Monochormatic</strong> &dash; colors very blended with minimal hue variety.</li>
+        <li class="definitions"><strong>Color scheme</strong> &dash; combination of all colors used within a project, arranged in a manner that enhances the overall design.</li>
+        <li class="definitions"><strong>Neutral colors</strong> &dash; often perceived as the absence of color, they actually typically contain subtle undertones. Some examples of neutral colors include <span class="gray">gray</span> and <span class="beige">beige</span>.</li>
+        <li class="definitions"><strong>Warm colors</strong> &dash; bring energy and intensity to a design and can often invoke strong emotions. Some examples of warm colors include <span class="red">red</span> and <span class="orange">orange</span>.</li>
+        <li class="definitions"><strong>Cool colors</strong> &dash; contribute to a calm and soothing atmosphere and can invoke feelings of peace and tranquility. Some examples of cool colors include <span class="blue">blue</span> and <span class="purple">purple</span>.</li>
+        <li class="definitions"><strong>Whitespace</strong> &dash; empty space.</li>
     </ol>
     <p class="sources"><strong>Sources:</strong> Webucator <br>
         <sup>1</sup> <a href="https://etchrlab.com/blogs/news/split-complementary-color-schemes?srsltid=AfmBOorU_nccrL2OlHbTe-RwRvixSMUTbhNYbqF8BCXGLp6R6cxtsQ9Q">Simplifying Color Choice with Split Complementary Color Schemes</a> &dash; EtchrLab</p>

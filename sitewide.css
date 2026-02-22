@@ -491,6 +491,11 @@ p, h1, h2, h3, h4, h5, h6, img, iframe, table, article{
     color: var(--accentfontcolor); 
 }
 
+.page-title{
+  font-weight: bolder; 
+  text-align: center;
+}
+
 /* RESPONSIVE STYLES */
 
 @media screen and (max-width: 540px){
