@@ -135,4 +135,19 @@ span{
     .d-flex p{
     font-size: 90%;  
 }
+
+#coding{
+    width: 50%; 
+    margin-right: 5%; 
+}
+
+#collaboration{
+    width: 50%; 
+    margin-left: 5%; 
+}
+
+#miami{
+    width: 30%; 
+    margin-right: 5%; 
+}
 }
