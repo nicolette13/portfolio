@@ -152,8 +152,8 @@ function handleComplete(evt,comp) {
 
 <div class="card">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1280px; height:720px">
-		<canvas id="canvas" width="1280" height="720" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; position: absolute; left: 0px; top: 0px; display: block;">
+		<canvas id="canvas" width="1280" height="720" style="display: flex; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1280px; height:720px; left: 0px; top: 0px; display: flex;">
 		</div>
 	</div>
 	<div class="card-body">
@@ -184,5 +184,25 @@ function handleComplete(evt,comp) {
 <script src="../sitewide.js"></script>
 <!-- boostrap -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	  <script>
+    
+// CREDIT COLLAPSE 
+
+let collapseBtn = document.getElementsByClassName('collapse-btn');
+let infoCredits = document.getElementById('info-credits'); 
+let arrowDown = document.getElementById('arrow-down'); 
+let i; 
+for(i=0; i<collapseBtn.length; i++){
+  collapseBtn[i].addEventListener('click', function(){
+    if(infoCredits.style.display === 'none'){
+      infoCredits.style.display = 'block';
+      arrowDown.classList.add('rotate'); 
+    }else{
+      infoCredits.style.display = 'none'; 
+      arrowDown.classList.remove('rotate'); 
+    }
+  })
+}
+  </script>
 </body>
 </html>
