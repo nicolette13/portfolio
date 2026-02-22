@@ -14,12 +14,38 @@ div#animation_container{
     padding: .3em; 
 }
 
+.page-nav{
+    background-color: var(--accent1); 
+    width: 35%;
+    border-radius: 10px;
+    padding: 10px; 
+    margin-left: 20px; 
+    box-shadow: var(--boxshadow2);
+}
+
+.pagenav-title{
+    font-size: 120%; 
+    font-weight: bold;
+    margin: 1em; 
+    color: var(--accentfontcolor);
+}
+
+.page-nav a {
+    transition: color 0.2s ease-in-out;
+    color: var(--accentfontcolor); 
+    text-decoration: none;
+}
+
+.page-nav a:hover{
+    color: var(--accent4); 
+}
+
 /* BACK TO TOP BUTTON */
 
 .top-link{
     position: fixed; 
     text-decoration: none;
-    color: var(--headerfontcolor); 
+    color: var(--accentfontcolor); 
     background-color: var(--accent1);
     padding: .3em; 
     font-size: 1.8em;
@@ -30,37 +56,8 @@ div#animation_container{
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-    z-index: 1000; 
 }
 
-
-/* PAGE NAVIGATION */
-
-.page-nav{
-    background-color: var(--accent2);
-    width: 290px;
-    border-radius: 10px;
-    padding: 10px; 
-    margin-left: 20px; 
-    box-shadow: 5px 5px 15px rgba(45, 36, 44, .2);
-}
-
-.pagenav-title{
-    font-size: 120%; 
-    font-weight: bold;
-    margin: 1em; 
-    color: var(--bodyfontcolor);
-}
-
-.page-nav a {
-    transition: color 0.3s ease-in-out;
-    color: var(--bodyfontcolor); 
-    text-decoration: none;
-}
-
-.page-nav a:hover{
-    color: var(--accent3); 
-}
 
 /* PROJECT TITLES AND INFO */
 
