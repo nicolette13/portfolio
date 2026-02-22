@@ -47,23 +47,6 @@ div.d-flex{
     margin-left: 5%;
 }
 
-/* images */
-
-#coding{
-    width: 100%; 
-    margin-right: 5%; 
-}
-
-#collaboration{
-    width: 100%; 
-    margin-left: 5%; 
-}
-
-#miami{
-    width: 80%; 
-    margin-right: 5%; 
-}
-
 /* contact info */
 
 .contact{
@@ -77,7 +60,24 @@ span{
 
 /* responsive settings */
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 1920px){
+    #coding{
+    width: 70%; 
+    margin-right: 5%; 
+}
+
+#collaboration{
+    width: 70%; 
+    margin-left: 5%; 
+}
+
+#miami{
+    width: 60%; 
+    margin-right: 5%; 
+}
+}
+
+@media screen and (max-width: 1080px){
     
     .page-title{
         margin-top: 1.3rem; 
@@ -96,12 +96,12 @@ span{
     }
 
     #coding{
-    width: 30%; 
+    width: 50%; 
     margin-right: 5%; 
     }
 
     #collaboration{
-    width: 30%; 
+    width: 50%; 
     margin-left: 5%; 
     }
 
