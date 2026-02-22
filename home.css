@@ -62,34 +62,34 @@ span{
 
 @media screen and (min-width: 1920px){
     #coding{
-    width: 70%; 
+    width: 200%; 
     margin-right: 5%; 
 }
 
 #collaboration{
-    width: 70%; 
+    width: 200%; 
     margin-left: 5%; 
 }
 
 #miami{
-    width: 60%; 
+    width: 180%; 
     margin-right: 5%; 
 }
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1900px) {
  #coding{
-    width: 50%; 
+    width: 150%; 
     margin-right: 5%; 
 }
 
 #collaboration{
-    width: 50%; 
+    width: 180%; 
     margin-left: 5%; 
 }
 
 #miami{
-    width: 40%; 
+    width: 100%; 
     margin-right: 5%; 
 }
 }
@@ -105,18 +105,24 @@ span{
     }
 
     #coding{
-    width: 50%; 
+    width: 80%; 
     margin-right: 5%; 
     }
 
     #collaboration{
-    width: 50%; 
+    width: 80%; 
     margin-left: 5%; 
     }
 
     #miami{
-    width: 30%; 
+    width: 60%; 
     margin-right: 5%; 
+    }
+}
+
+@media screen and (max-width: 720px){
+      .d-flex img{
+        display: none; 
     }
 }
 
@@ -150,9 +156,6 @@ span{
         margin-top: 1rem;
     }
 
-    .d-flex img{
-        display: none; 
-    }
 
     .d-flex p{
     font-size: 90%;  
