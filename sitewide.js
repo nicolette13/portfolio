@@ -1,17 +1,16 @@
 // TIPPY TOOLTIPS 
 
-tippy('[data-tippy-content', {
-    theme: 'custom', 
-    arrow: true, 
-    delay: [200], 
-    followCursor: true, 
+tippy('[data-tippy-content]', {
+    theme: 'custom',
+    arrow: true,
+    followCursor: true,
+    delay: [200],
     duration: [400]
 });
 
+// LIGHT/DARK MODE 
 
-//  LIGHT/DARK MODE 
-
- const toggleBtn = document.querySelector('input[type="checkbox"]');
+const toggleBtn = document.querySelector('input[type="checkbox"]');
 
  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null; 
         if(currentTheme){
@@ -19,8 +18,7 @@ tippy('[data-tippy-content', {
             if(currentTheme === 'dark'){
                 toggleBtn.checked = true; 
             }
-        }
-        
+        }   
     function changeTheme(e){
         if(e.target.checked){
             document.documentElement.setAttribute('data-bs-theme', 'dark'); 
@@ -31,25 +29,36 @@ tippy('[data-tippy-content', {
         }
     }
 
-    
-    toggleBtn.addEventListener('change', changeTheme, false); 
+toggleBtn.addEventListener('change', changeTheme, false); 
 
 
-// TOGGLE FONT SIZES
+// INCREASE/DECREASE FONT SIZE
 
-let smallBtn = document.getElementById('small'); 
-let medBtn = document.getElementById('medium'); 
-let largeBtn = document.getElementById('large'); 
+let increaseBtn = document.getElementById('increase');
+let decreaseBtn = document.getElementById('decrease'); 
+let minFontSize = 8; 
+let maxFontSize = 30;  
 
-smallBtn.addEventListener('click', function(e){
-    document.body.style.fontSize = '14px';
-}); 
+function changeFontSize(change){
+  let htmlElem = document.documentElement;
 
-medBtn.addEventListener('click', function(e){
-    document.body.style.fontSize = '18px';
-}); 
+  let currentSize = parseFloat(window.getComputedStyle(htmlElem, null).fontSize); 
+  let newSize = currentSize + change; 
 
-largeBtn.addEventListener('click', function(e){
-    document.body.style.fontSize = '22px'; 
-}); 
+  if(newSize >= minFontSize && newSize <= maxFontSize){
+    htmlElem.style.fontSize = newSize + 'px'; 
+  }
+}
+
+function increaseSize(){
+    changeFontSize(1); 
+}
+
+function decreaseSize(){
+    changeFontSize(-1); 
+}
+
+increaseBtn.addEventListener('click', increaseSize);
+decreaseBtn.addEventListener('click', decreaseSize); 
+
 

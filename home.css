@@ -1,16 +1,66 @@
+/* modify bootstrap colors */
+
+:root, html[data-bs-theme='light']{
+    --slidefontcolor: whitesmoke; 
+    --bs-carousel-indicator-active-bg: whitesmoke; 
+}
+
+html[data-bs-theme='dark']{
+    --slidefontcolor: #fefefe; 
+    --bs-carousel-indicator-active-bg: whitesmoke; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); 
+}
+
+/* page title */
+
 .page-title{
     font-size: 250%;
     padding: .7rem;
     margin-top: 5rem;
-    margin-bottom: 1rem; 
+    margin-bottom: -9rem; 
     text-align: center;
 }
 
-.bio{
-    font-size: 140%; 
-    margin: 1em; 
-    text-align: center;
+/* carousel styles */
+
+.carousel{
+    margin-top: 100px; 
 }
+
+div.d-flex{
+    height: 500px; 
+    padding: 20px; 
+}
+
+.d-flex p{
+    font-size: 110%;  
+}
+
+.carousel-item{
+    width: 90%; 
+    margin-left: 50px;
+}
+
+/* images */
+
+#coding{
+    margin-left: -5px; 
+    width: 50%; 
+}
+
+#collaboration{
+    width: 40%; 
+}
+
+#miami{
+    width: 50%; 
+}
+
+/* contact info */
 
 .contact{
     text-align: center;
@@ -18,5 +68,44 @@
 }
 
 span{
-    padding: .2em; 
+    padding: .2rem; 
+}
+
+/* responsive settings */
+
+@media screen and (max-width: 992px){
+    .carousel{
+        margin-top: 75px; 
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel-item{
+        margin-left: 20px; 
+    }
+
+    .tippy-box[data-theme~='custom']{
+            display: none; 
+    }
+
+    .page-title{
+        font-size: 150%; 
+        margin-bottom: -3rem;
+    }
+
+    .contact{
+        font-size: 100%; 
+    }
+
+    span{
+        padding: 0; 
+    }
+
+    .carousel-indicators{
+        margin-bottom: -1rem; 
+    }
+
+    .d-flex img{
+        display: none; 
+    }
 }
