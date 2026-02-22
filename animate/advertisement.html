@@ -169,5 +169,25 @@ function handleComplete(evt,comp) {
 <script src="../sitewide.js"></script>
 <!-- boostrap -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	
+	<script>
+      // CREDIT COLLAPSE 
+
+let collapseBtn = document.getElementsByClassName('collapse-btn');
+let adCredits = document.getElementById('ad-credits'); 
+let arrowDown = document.getElementById('arrow-down'); 
+let i; 
+for(i=0; i<collapseBtn.length; i++){
+  collapseBtn[i].addEventListener('click', function(){
+    if(adCredits.style.display === 'none'){
+      adCredits.style.display = 'block';
+      arrowDown.classList.add('rotate'); 
+    }else{
+      adCredits.style.display = 'none'; 
+      arrowDown.classList.remove('rotate'); 
+    }
+  })
+}
+</script>
 </body>
 </html>
